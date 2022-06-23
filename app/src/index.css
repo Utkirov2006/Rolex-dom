@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  height: 8vh;
+  overflow: hidden;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  position: absolute;
+  left: 38rem;
+  top: 1rem;
+  color: white;
+  z-index: 9999;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar .logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(./Images/);
+}
+
+.home {
+  background-image: url(./Images/photo_2022-06-12_15-18-06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  filter: invert(1);
+}
+
+.activ {
+  background: white;
+  color: black;
+  padding: 8px 12px;
+  box-shadow: 0 -1px 15px silver;
+  text-decoration: none;
+}
+
+.about {
+
+  background-image: url(./Images/rolexx.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+
+.card {
+  position: absolute;
+  left: 67rem;
+  top: 72px;
+  width: 464px;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgb(255, 255, 255, 0.4);
+  color: white;
+  overflow: hidden;
+}
+
+.about .card img {
+  width: 100%;
+  height: 199px;
+
+}
+
+.about .card h4 {
+  margin: 22px 28px 20px 55px;
+  font-size: 18px;
+  color: black;
+}
+
+.features {
+  height: 90vh;
+  width: 100%;
+}
+
+.features img {
+  margin: 10px;
+  width: 359px;
+  height: 308px;
+}
+
+.watches {
+  height: 90vh;
+  width: 100%;
+}
+
+.watches img {
+  margin: 10px;
+  width: 359px;
+  height: 308px;
+}
+
+.player {
+  margin: 10px;
+  width: 359px;
+  height: 308px;
+}
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+}
+
+.lists {
+  margin: 10px;
+  width: 358px;
+  height: 290px;
+  border: 1px solid black;
+
+}
+
+.lists:hover {
+  animation: mymove 1s   infinite;
+
+
+}
+
+
+@keyframes mymove {
+  0% {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+    transform: translate(-10px) scale(1.2);
+  }
+
+}
+
+
+.portret {
+  width: 100%;
+  height: 200px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px){
+  /* .navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgb(156, 14, 156), midnightblue);
+
+}
+.navbar ul{
+  position: relative;
+  left: 0;
+
+  width: 100%;
+
+  flex-direction: column;
+
+}
+.navbar ul li{
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.555);
+  text-align: center;
+  margin-right: 0px;
+  padding: 20px 0;
+} */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* error */
+#oopss {
+  background: linear-gradient(-45deg, #fff300, #efe400);
+  position: relative;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 92vh;
+  line-height: 1.5em;
+  z-index: 9999;
+}
+
+#oopss #error-text {
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Shabnam', Tahoma, sans-serif;
+  color: #000;
+  direction: rtl;
+}
+
+#oopss #error-text img {
+  margin: 85px auto 20px;
+  height: 324px;
+}
+
+#oopss #error-text span {
+  position: relative;
+  font-size: 3.3em;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+#oopss #error-text p.p-a {
+  font-size: 19px;
+  margin: 30px 0 15px 0;
+}
+
+#oopss #error-text p.p-b {
+  font-size: 15px;
+}
+
+#oopss #error-text .back {
+  background: #fff;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  padding: .7em 2em;
+  border-radius: 500px;
+  box-shadow: 0 20px 70px 4px rgba(0, 0, 0, 0.1), inset 7px 33px 0 0px #fff300;
+  font-weight: 900;
+  transition: all 300ms ease;
+}
+
+#oopss #error-text .back:hover {
+  -webkit-transform: translateY(-13px);
+  transform: translateY(-13px);
+  box-shadow: 0 35px 90px 4px rgba(0, 0, 0, 0.3), inset 0px 0 0 3px #000;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot");
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff") format("woff"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.woff2") format("woff2"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Shabnam;
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot");
+  src: url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.eot?#iefix") format("embedded-opentype"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff") format("woff"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.woff2") format("woff2"), url("https://cdn.rawgit.com/ahmedhosna95/upload/ba6564f8/fonts/Shabnam/Shabnam.ttf") format("truetype");
+  font-weight: normal;
+}
+
+/* error :end */
